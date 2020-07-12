@@ -1,0 +1,14 @@
+.Keyboard {
+  padding: 1rem;
+}
+.Keyboard button {
+  background-color: white;
+  border: 0.15rem solid black;
+  margin: 0.25rem;
+}
+.Keyboard button:disabled {
+  background-color: rgba(80, 80, 80, 0.2);
+  border: 0.15rem solid black;
+  margin: 0.25rem;
+  font-family: inherit;
+}
