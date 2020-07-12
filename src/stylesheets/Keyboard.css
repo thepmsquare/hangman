@@ -4,7 +4,7 @@
 .Keyboard button {
   background-color: white;
   border: 0.15rem solid black;
-  margin: 0.25rem;
+  margin: 0.3rem;
 }
 .Keyboard button:disabled {
   background-color: rgba(80, 80, 80, 0.2);

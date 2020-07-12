@@ -3,11 +3,11 @@ import "./stylesheets/Keyboard.css";
 
 class Keyboard extends Component {
   render() {
-    const allLetters1 = "QWERTYUIOP";
+    const allLetters1 = "ABCDEFGHI";
     const allLetters1Array = allLetters1.split("");
-    const allLetters2 = "ASDFGHJKL";
+    const allLetters2 = "JKLMNOPQ";
     const allLetters2Array = allLetters2.split("");
-    const allLetters3 = "ZXCVBNM";
+    const allLetters3 = "RSTUVWXYZ";
     const allLetters3Array = allLetters3.split("");
     const { toUpdateClickedKeys, clickedKeys } = this.props;
 

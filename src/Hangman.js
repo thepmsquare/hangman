@@ -92,6 +92,7 @@ class Hangman extends Component {
         <h1>Hangman</h1>
         <p className="Hangman-Text">Clue: {this.state.clue}</p>
         <img
+          className="Hangman-Image"
           src={images[this.state.numMistakes]}
           alt={this.state.numMistakes + " mistakes."}
         />

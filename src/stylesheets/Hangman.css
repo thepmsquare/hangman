@@ -1,9 +1,12 @@
 .Hangman-Text {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .Hangman-Button {
-  background-color: white;
+  background-color: inherit;
   border: 0.15rem solid black;
   padding: 0.5rem;
   font-family: inherit;
+}
+.Hangman-Image {
+  height: 10rem;
 }
