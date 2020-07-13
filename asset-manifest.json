@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hangman-game-react/static/css/main.0970030c.chunk.css",
-    "main.js": "/hangman-game-react/static/js/main.424f94ad.chunk.js",
-    "main.js.map": "/hangman-game-react/static/js/main.424f94ad.chunk.js.map",
+    "main.js": "/hangman-game-react/static/js/main.5f4686c6.chunk.js",
+    "main.js.map": "/hangman-game-react/static/js/main.5f4686c6.chunk.js.map",
     "runtime-main.js": "/hangman-game-react/static/js/runtime-main.1e588c88.js",
     "runtime-main.js.map": "/hangman-game-react/static/js/runtime-main.1e588c88.js.map",
     "static/js/2.c1722d6c.chunk.js": "/hangman-game-react/static/js/2.c1722d6c.chunk.js",
     "static/js/2.c1722d6c.chunk.js.map": "/hangman-game-react/static/js/2.c1722d6c.chunk.js.map",
     "index.html": "/hangman-game-react/index.html",
-    "precache-manifest.5983d3941c3e81b52bda958a225f7a41.js": "/hangman-game-react/precache-manifest.5983d3941c3e81b52bda958a225f7a41.js",
+    "precache-manifest.e237dacaaaa225507b4c33def8c10951.js": "/hangman-game-react/precache-manifest.e237dacaaaa225507b4c33def8c10951.js",
     "service-worker.js": "/hangman-game-react/service-worker.js",
     "static/css/main.0970030c.chunk.css.map": "/hangman-game-react/static/css/main.0970030c.chunk.css.map",
     "static/js/2.c1722d6c.chunk.js.LICENSE.txt": "/hangman-game-react/static/js/2.c1722d6c.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1e588c88.js",
     "static/js/2.c1722d6c.chunk.js",
     "static/css/main.0970030c.chunk.css",
-    "static/js/main.424f94ad.chunk.js"
+    "static/js/main.5f4686c6.chunk.js"
   ]
 }
