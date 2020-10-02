@@ -106,6 +106,17 @@ class Hangman extends Component {
         <button className="Hangman-Button" onClick={this.tryAgain}>
           Other word?
         </button>
+        <p>
+          Thanks to{" "}
+          <a
+            href="https://github.com/Leviter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @Leviter
+          </a>{" "}
+          for contributing words.
+        </p>
       </div>
     );
   }
