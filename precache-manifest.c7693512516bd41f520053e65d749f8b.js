@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "42624589fc3c3c39532abadf78f93e55",
+    "revision": "9fa5263308349be3600ba85f1e9c51ba",
     "url": "/hangman-game-react/index.html"
   },
   {
-    "revision": "cfb0366d19aa7989a66d",
+    "revision": "b21f6b435b3be90878ff",
     "url": "/hangman-game-react/static/css/main.0970030c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hangman-game-react/static/js/2.c1722d6c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cfb0366d19aa7989a66d",
-    "url": "/hangman-game-react/static/js/main.c144e7dd.chunk.js"
+    "revision": "b21f6b435b3be90878ff",
+    "url": "/hangman-game-react/static/js/main.aa6302f9.chunk.js"
   },
   {
     "revision": "0a4a5f83061e21403226",
