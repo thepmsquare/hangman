@@ -1,8 +1,8 @@
 {
-  "name": "hangman-react",
-  "version": "0.1.0",
+  "name": "hangman",
+  "version": "2.0.0",
   "private": true,
-  "homepage": "https://thepmsquare.github.io/hangman-game-react",
+  "homepage": "https://thepmsquare.github.io/hangman",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
