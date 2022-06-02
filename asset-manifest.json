@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hangman-game-react/static/css/main.0970030c.chunk.css",
-    "main.js": "/hangman-game-react/static/js/main.aa6302f9.chunk.js",
-    "main.js.map": "/hangman-game-react/static/js/main.aa6302f9.chunk.js.map",
-    "runtime-main.js": "/hangman-game-react/static/js/runtime-main.1e588c88.js",
-    "runtime-main.js.map": "/hangman-game-react/static/js/runtime-main.1e588c88.js.map",
-    "static/js/2.c1722d6c.chunk.js": "/hangman-game-react/static/js/2.c1722d6c.chunk.js",
-    "static/js/2.c1722d6c.chunk.js.map": "/hangman-game-react/static/js/2.c1722d6c.chunk.js.map",
-    "index.html": "/hangman-game-react/index.html",
-    "precache-manifest.c7693512516bd41f520053e65d749f8b.js": "/hangman-game-react/precache-manifest.c7693512516bd41f520053e65d749f8b.js",
-    "service-worker.js": "/hangman-game-react/service-worker.js",
-    "static/css/main.0970030c.chunk.css.map": "/hangman-game-react/static/css/main.0970030c.chunk.css.map",
-    "static/js/2.c1722d6c.chunk.js.LICENSE.txt": "/hangman-game-react/static/js/2.c1722d6c.chunk.js.LICENSE.txt",
-    "static/media/6.jpg": "/hangman-game-react/static/media/6.90cc5114.jpg"
+    "main.css": "/hangman/static/css/main.0970030c.chunk.css",
+    "main.js": "/hangman/static/js/main.aa6302f9.chunk.js",
+    "main.js.map": "/hangman/static/js/main.aa6302f9.chunk.js.map",
+    "runtime-main.js": "/hangman/static/js/runtime-main.1e588c88.js",
+    "runtime-main.js.map": "/hangman/static/js/runtime-main.1e588c88.js.map",
+    "static/js/2.c1722d6c.chunk.js": "/hangman/static/js/2.c1722d6c.chunk.js",
+    "static/js/2.c1722d6c.chunk.js.map": "/hangman/static/js/2.c1722d6c.chunk.js.map",
+    "index.html": "/hangman/index.html",
+    "precache-manifest.c7693512516bd41f520053e65d749f8b.js": "/hangman/precache-manifest.c7693512516bd41f520053e65d749f8b.js",
+    "service-worker.js": "/hangman/service-worker.js",
+    "static/css/main.0970030c.chunk.css.map": "/hangman/static/css/main.0970030c.chunk.css.map",
+    "static/js/2.c1722d6c.chunk.js.LICENSE.txt": "/hangman/static/js/2.c1722d6c.chunk.js.LICENSE.txt",
+    "static/media/6.jpg": "/hangman/static/media/6.90cc5114.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1e588c88.js",
