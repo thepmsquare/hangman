@@ -10,7 +10,7 @@ class Words extends Component {
         {letters.map((letter, index) => {
           if (letter === " ") {
             return <span key={index}>&emsp;</span>;
-          } else if (letter ==="'") {
+          } else if (letter === "'") {
             return <span key={index}>&apos;</span>;
           } else if (clickedKeys.includes(letter)) {
             return <span key={index}> {letter} </span>;

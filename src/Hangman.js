@@ -80,9 +80,10 @@ class Hangman extends Component {
   pickAWord = () => {
     let category = AllWords[Math.floor(Math.random() * AllWords.length)];
     let clue = category.clue;
-    let word = category.choices[
-      Math.floor(Math.random() * category.choices.length)
-    ].toUpperCase();
+    let word =
+      category.choices[
+        Math.floor(Math.random() * category.choices.length)
+      ].toUpperCase();
 
     return { clue, word };
   };

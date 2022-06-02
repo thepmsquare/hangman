@@ -1,6 +1,6 @@
 {
-  "short_name": "Hangman",
-  "name": "Hangman",
+  "short_name": "hangman",
+  "name": "hangman",
   "icons": [
     {
       "src": "favicon.ico",
