@@ -3,3 +3,30 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .letter {
+    min-width: 0;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+}

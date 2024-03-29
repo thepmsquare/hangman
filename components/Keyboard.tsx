@@ -18,11 +18,12 @@ export default function Keyboard(props: {
     <div className={styles.Keyboard}>
       {layout.map((row, idx) => {
         return (
-          <div key={idx}>
+          <div key={idx} className={styles.row}>
             {row.split("").map((letter) => {
               return (
                 <Button
                   key={letter}
+                  className={styles.letter}
                   disabled={props.clickedKeys.indexOf(letter) !== -1}
                   onClick={() => {
                     customChangeClickedKeys(letter);

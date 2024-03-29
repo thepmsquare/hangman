@@ -1,5 +1,46 @@
-.main {
+.appName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
 }
-.textField {
-  width: 3rem;
+.main {
+  width: 100dvw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.cardActions {
+  justify-content: end;
+}
+.displayText {
+  text-align: center;
+  font-family: "monospace";
+}
+.displayTextLetter {
+  display: inline-block;
+  padding: 0.2rem;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  .card {
+    width: 50dvw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .appName {
+    font-size: 4rem;
+  }
+  .card {
+    width: 90dvw;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
 }

@@ -9,6 +9,10 @@ import GameState from "@/types/GameState";
 import SelectedWord from "@/types/SelectedWord";
 import {
   Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardHeader,
   CircularProgress,
   createTheme,
   LinearProgress,
@@ -137,62 +141,71 @@ export default function Home() {
     <ThemeProvider theme={currentTheme}>
       <StyledEngineProvider injectFirst>
         <Paper className={styles.main} square>
-          <Typography variant="h1">{config.appName}</Typography>
+          <Typography variant="h1" className={styles.appName}>
+            {config.appName}
+          </Typography>
+
           {selectedWord ? (
-            <>
-              <Typography variant="h2">Clue: {selectedWord.clue}</Typography>
-              <Typography variant="h3">Score: {score}</Typography>
-              {gameState === "loss" && (
-                <Typography variant="h3" color="error">
-                  Loss
-                </Typography>
-              )}
-              {gameState === "won" && (
-                <Typography variant="h3" color="primary">
-                  Correct
-                </Typography>
-              )}
-              {selectedWord.word.split("").map((ele, idx) => {
-                if (ele !== " ") {
-                  return (
-                    <TextField
-                      key={idx}
-                      variant="outlined"
-                      disabled
-                      value={
-                        clickedKeys.indexOf(ele.toLowerCase()) !== -1 ? ele : ""
-                      }
-                      className={styles.textField}
-                    />
-                  );
-                } else {
-                  return "-";
-                }
-              })}
+            <Card className={styles.card}>
               <LinearProgress
                 variant="determinate"
                 value={(numLivesLeft * 100) / config.maxLives}
               />
-              <Keyboard
-                clickedKeys={clickedKeys}
-                changeClickedKeys={changeClickedKeys}
+              <CardHeader
+                title={`Clue: ${selectedWord.clue} `}
+                subheader={`${
+                  gameState === "loss"
+                    ? "Out of lives"
+                    : gameState === "won"
+                    ? "Correct"
+                    : `${numLivesLeft} tries remaining`
+                } | Score: ${score}`}
               />
-              <Button onClick={selectNewWord}>Different word?</Button>
-              <Typography>
-                Thanks to{" "}
-                <Link
-                  href="https://github.com/Leviter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  @Leviter
-                </Link>{" "}
-                for contributing words.
-              </Typography>
-            </>
+
+              <CardContent className={styles.cardContent}>
+                <Typography className={styles.displayText}>
+                  {selectedWord.word.split("").map((ele, idx) => {
+                    if (ele !== " ") {
+                      return (
+                        <span key={idx} className={styles.displayTextLetter}>
+                          {clickedKeys.indexOf(ele.toLowerCase()) !== -1
+                            ? ele
+                            : "_"}
+                        </span>
+                      );
+                    } else {
+                      return (
+                        <span key={idx} className={styles.displayTextLetter}>
+                          -
+                        </span>
+                      );
+                    }
+                  })}
+                </Typography>
+
+                <Keyboard
+                  clickedKeys={clickedKeys}
+                  changeClickedKeys={changeClickedKeys}
+                />
+              </CardContent>
+              <CardActions className={styles.cardActions}>
+                <Button onClick={selectNewWord}>Different word?</Button>
+              </CardActions>
+            </Card>
           ) : (
             <CircularProgress />
           )}
+          <Typography>
+            Thanks to{" "}
+            <Link
+              href="https://github.com/Leviter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @Leviter
+            </Link>{" "}
+            for contributing words.
+          </Typography>
           <Button onClick={toggleTheme}>toggle theme</Button>
         </Paper>
       </StyledEngineProvider>
