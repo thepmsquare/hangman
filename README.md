@@ -6,7 +6,7 @@ Feedback is appreciated. Thank you!
 
 # built on
 
-- NodeJS v18.14.2
-- npm v9.5.0
+- NodeJS v20.11.1
+- npm v10.5.0
 
 and more inside `package.json`
