@@ -7,7 +7,11 @@ import config from "@/config/config";
 import ClickedKeys from "@/types/ClickedKeys";
 import GameState from "@/types/GameState";
 import SelectedWord from "@/types/SelectedWord";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
   Button,
   Card,
   CardActions,
@@ -166,11 +170,6 @@ export default function Home() {
                     }
                   })}
                 </Typography>
-
-                <Keyboard
-                  clickedKeys={clickedKeys}
-                  changeClickedKeys={changeClickedKeys}
-                />
               </CardContent>
               <CardActions className={styles.cardActions}>
                 <Button onClick={selectNewWord}>Different word?</Button>
@@ -179,6 +178,23 @@ export default function Home() {
           ) : (
             <CircularProgress />
           )}
+
+          <Accordion defaultExpanded>
+            <AccordionSummary
+              expandIcon={<ArrowDropDownIcon />}
+              aria-controls="virtual-keyboard-content"
+              id="virtual-keyboard-header"
+            >
+              <Typography>Virtual Keyboard</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Keyboard
+                clickedKeys={clickedKeys}
+                changeClickedKeys={changeClickedKeys}
+              />
+            </AccordionDetails>
+          </Accordion>
+
           <Typography>
             Thanks to{" "}
             <Link
