@@ -5,7 +5,6 @@ interface Config {
   maxLives: number;
   defaultTheme: PaletteMode;
   localStorageVariableNames: {
-    score: string;
     theme: string;
   };
 }

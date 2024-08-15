@@ -13,6 +13,7 @@ import {
   CardActions,
   CardContent,
   CardHeader,
+  Chip,
   CircularProgress,
   createTheme,
   LinearProgress,
@@ -34,7 +35,6 @@ export default function Home() {
   const [numLivesLeft, changeNumLivesLeft] = useState(config.maxLives);
   const [clickedKeys, changeClickedKeys] = useState<ClickedKeys>([]);
   const [gameState, changeGameState] = useState<GameState>("normal");
-  const [score, changeScore] = useState(0);
   const [theme, changeTheme] = useState<PaletteMode>(config.defaultTheme);
 
   // functions
@@ -52,16 +52,6 @@ export default function Home() {
   };
 
   const loadStuffFromLocalStorage = () => {
-    // score
-    let localStorageScore = window.localStorage.getItem(
-      config.localStorageVariableNames.score
-    );
-    if (localStorageScore) {
-      changeScore(parseInt(localStorageScore));
-    } else {
-      window.localStorage.setItem(config.localStorageVariableNames.score, "0");
-    }
-
     // theme
     let localStorageTheme = window.localStorage.getItem(
       config.localStorageVariableNames.theme
@@ -117,13 +107,6 @@ export default function Home() {
         changeGameState("won");
         changeNumLivesLeft(config.maxLives);
         changeClickedKeys("abcdefghijklmnopqrstuvwxyz".split(""));
-        changeScore((oldScore) => {
-          window.localStorage.setItem(
-            config.localStorageVariableNames.score,
-            (oldScore + 1).toString()
-          );
-          return oldScore + 1;
-        });
       }
     } else {
       // pass
@@ -152,13 +135,15 @@ export default function Home() {
               />
               <CardHeader
                 title={`Clue: ${selectedWord.clue} `}
-                subheader={`${
-                  gameState === "loss"
-                    ? "Out of lives"
-                    : gameState === "won"
-                    ? "Correct"
-                    : `${numLivesLeft} tries remaining`
-                } | Score: ${score}`}
+                subheader={
+                  gameState === "loss" ? (
+                    "Out of lives"
+                  ) : gameState === "won" ? (
+                    "Correct"
+                  ) : (
+                    <Chip label={`${numLivesLeft} tries remaining`} />
+                  )
+                }
               />
 
               <CardContent className={styles.cardContent}>
